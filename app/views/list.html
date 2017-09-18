@@ -1,0 +1,10 @@
+<h3> List of albums</h3>
+<a class="album" ng-repeat="album in lctrl.list track by $index" ui-sref="info({id: $index})">
+    <img ng-src="{{album.banner_link}}">
+    <div class="info">
+        <div class="col-sm-12">
+            <h4>{{album.title}}</h4>
+            <p>{{album.description}}</p>
+        </div>
+    </div>
+</a>

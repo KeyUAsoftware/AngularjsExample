@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-xs-10">
+            <h4>Add video</h4>
+        </div>
+        <div class="col-xs-2">
+            <button class="close" ng-click="addctrl.close()">×</button>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Title</label>
+            <input type="text" class="form-control" ng-model="addctrl.video.title">
+        </div>
+        <div class="col-sm-6">
+            <label>Link</label>
+            <input type="text" class="form-control" ng-model="addctrl.video.link">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Description</label>
+            <textarea cols="30" rows="10" class="form-control" ng-model="addctrl.video.description"></textarea>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-click="addctrl.add()">Save</button>
+</div>
